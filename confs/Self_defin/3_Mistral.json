@@ -1,0 +1,56 @@
+{
+  "model_path": {
+    "naive_model_path":"/root/model/mistral",
+    "model1_path": "/root/model/mistral",
+    "model2_path": "/root/model/mistral"
+  },
+  "probability_transfer_matrix_path": {
+    "naive_model_path":"/root/work/Crowdsourcing/MLDR/MLDR/represent_matrix/mistral/mistral.pth",
+    "model1_path": "/root/work/Crowdsourcing/MLDR/MLDR/represent_matrix/mistral/mistral.pth",
+    "model2_path": "/root/work/Crowdsourcing/MLDR/MLDR/represent_matrix/mistral/mistral.pth"
+  },
+  "probability_transfer_inv_matrix_path": {
+    "naive_model_path":"/root/work/Crowdsourcing/MLDR/MLDR/represent_matrix/mistral/mistral_inv.pth",
+    "model1_path": "/root/work/Crowdsourcing/MLDR/MLDR/represent_matrix/mistral/mistral_inv.pth",
+    "model2_path": "/root/work/Crowdsourcing/MLDR/MLDR/represent_matrix/mistral/mistral_inv.pth"
+  },
+  "file_path": {
+    "naive_file_path": "/root/work/Crowdsourcing/MLDR/MLDR/datasets/Self_define/empty.jsonl",
+    "file1_path": "/root/work/Crowdsourcing/MLDR/MLDR/datasets/Self_define/full.jsonl",
+    "file2_path": "/root/work/Crowdsourcing/MLDR/MLDR/datasets/Self_define/half.jsonl"
+  },
+  "prompt_template": {
+    "model_system_template": "<s>{}",
+    "instruction": "Answer this questions using only noun:\n",
+    "instruction_parameter": {
+      "key": [
+        "question"
+      ],
+      "template": "Question:{}\nAnswer:"
+    },
+    "demon_parameter": {
+      "key": [
+        "question",
+        "answer"
+      ],
+      "template": "Question:{}\nAnswer:{}\n"
+    }
+  },
+  "run_parameter": {
+    "max_new_tokens": 20
+  },
+  "result_process_parameter": {
+    "early_stop_string_list": [
+      "\n"
+    ],
+    "split_key_before": [
+      "\nAnswer:"
+    ],
+    "split_key_behind": [
+      "\n",
+      "</s>",
+      "<unk>",
+      "\nQuestion:"
+    ]
+  }
+}
