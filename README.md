@@ -2,7 +2,7 @@
 
 Source code for paper "Mechanism Design for Agent-driven Multi-domain Recommender System".
 
-![](./figures/ADMDR.pdf "ADMDR")
+![](./figures/ADMDR.pdf)
 
 Agent-driven multi-domain recommender (ADMDR) systems increasingly power multi-domain recommender systems through multi-agent collaboration. This calls for a cost-effective and truthful incentive mechanism. In this paper, we develop the Verification-based Truthful Incentive (VeriTi) mechanism to quantify agent contributions fairly and establish the relation between the contribution and capability of agents. 
 
